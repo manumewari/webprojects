@@ -1,91 +1,111 @@
 <!DOCTYPE html>
 <html>
     <head>
-        <link rel="stylesheet" href="../css/surveyform.css">
+        <link href="https://fonts.googleapis.com/css?family=Lobster|Tangerine|Inconsolata" rel="stylesheet" type="text/css">
+        <link rel="stylesheet" href="../css/productlanding.css">
     </head>
     <body>
 
-        <div>
-            <h1 id="title">Registration Form For Responsive Web classes</h1>
-        </div>
+        <div class="main-container">
 
-        <div class="desc">
-            <p id="description">Please fill your details and submit to enroll yourself.</p>
-        </div>
+            <header id="header">
+                <div class="header-container">
+                    <div class="companylogo">
+                        <img class="logo-img" src="../images/dragon.jpeg" id="header-img" >
+                        Dragon Den
+                    </div>
 
-        <div class="form-container">
-            <form id="survey-form" action="">
+                    <div class="nav-container">
+                        <nav>
+                            <div class="nav-menu">
+                                <div class="menuitem"><a class="nav-link" href="#aboutus">About Us</a></div>
+                                <div class="menuitem"><a class="nav-link" href="#types">Dragon Types</a> </div>
+                                <div class="menuitem"><a class="nav-link" href="#price">Price</a></div>
+                                <div class="menuitem"><a class="nav-link" href="#stores">Stores</a></div>
+                                <div class="menuitem"><a class="nav-link" href="#buy">Buy</a></div>
+                            </div>
+                        </nav>
+                    </div>
 
-                <div class="form-row">
-                    <div class="label">
-                        <label id="name-label">Name: </label>
-                    </div>
-                    <div class="field">
-                        <input type="text" id="name" class="text-field" placeholder="Please enter name" required>
-                    </div>
                 </div>
-                <div class="form-row">
-                    <div class="label">
-                        <label id="email-label">Email: </label>
-                    </div>
-                    <div class="field">
-                        <input type="email" id="email" class="text-field" placeholder="Please enter email address" required> <!--add validation-->
-                    </div>
+            </header>
+
+            <div class="page-container">
+
+                <h2>
+
+                </h2>
+                <div>
+                    <video width="720" height="405" controls  poster="../images/poster-dragons.jpg">
+                        <source src="https://www.youtube.com/watch?v=DKKPDlwRMFk" type="video/mp4">
+                        <source src="https://www.youtube.com/watch?v=DKKPDlwRMFk" type="video/ogg">
+                        <source src="https://www.youtube.com/watch?v=DKKPDlwRMFk" type="video/webm">
+                        Your browser does not support the video tag or the file format of this video. <a href="http://www.webestools.com/">http://www.webestools.com/</a>
+                    </video>
                 </div>
-                <div class="form-row">
-                    <div class="label">
-                        <label id="number-label">Age: </label>
+
+                <h2 id="aboutus">
+                    About Us
+                </h2>
+                <p>Dragon Den is the only oraganisation in the world who is selling dragons. We have managed to find DNA of dragons and our scientists have succeeded in bringing back dragons on earth. You can have a dragon for safety of your house or you can even save your airplane tickets by travelling on it.</p>
+
+                <h2 id="types">
+                    Types of Dragons
+                </h2>
+                <p>We have Drogons in 3 colors:</p>
+
+                <div class="dragon-types">
+                    <div class="dragon-type type1">
+                        <label>Red Dragon</label>
+                        <div class="dragon-image">
+                            <img class="dragon-img" src="../images/red-dragon.jpg">
+                        </div>
                     </div>
-                    <div class="field">
-                        <input type="number" class="text-field" id="number" min="10" max="60" placeholder="Please enter your age" required> <!--add validation-->
+                    <div class="dragon-type type2">
+                        <label>Green Dragon</label>
+                        <div class="dragon-image">
+                            <img class="dragon-img" src="../images/green-dragon.png">
+                        </div>
                     </div>
-                </div>
-                <div class="form-row">
-                    <div class="label">
-                        <label id="city-label">City: </label>
-                    </div>
-                    <div class="field">
-                        <select id="dropdown" name="City">
-                            <option value="delhi">Delhi</option>
-                            <option value="mumbai">Mumbai</option>
-                            <option value="bangalore">Bangalore</option>
-                            <option value="hyderabad">Hyderabad</option>
-                        </select>
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="label">
-                        <label id="gender-label">Gender: </label>
-                    </div>
-                    <div class="field">
-                        <input type="radio" name="gender" value="M"> Male
-                        <input type="radio" name="gender" value="F"> Female
-                        <input type="radio" name="gender" value="O"> Other
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="label">
-                        <label id="course-label">Course to enroll: </label>
-                    </div>
-                    <div class="field">
-                        <input type="checkbox" name="course" value="html"> HTML
-                        <input type="checkbox" name="course" value="css"> CSS
-                        <input type="checkbox" name="course" value="js"> JS
-                    </div>
-                </div>
-                <div class="form-row">
-                    <div class="label">
-                        <label id="comments-label">Suggestions: </label>
-                    </div>
-                    <div class="field">
-                        <textarea name="suggestions" rows="5" cols="50"
-                               placeholder="Please give your suggestions for any improvement"></textarea>
+                    <div class="dragon-type type3">
+                        <label>Blue Dragon</label>
+                        <div class="dragon-image">
+                            <img class="dragon-img" src="../images/blue-dragon.jpg">
+                        </div>
                     </div>
                 </div>
 
-                <div class="submit-row"><button type="submit">Submit Details</button></div>
+                <h2 id="price">
+                    Prices
+                </h2>
+                <p>We are selling draongs at a very nonimal prices starting from $10,000. </p>
 
-            </form>
+                <h2 id="stores">
+                    Our Stores
+                </h2>
+                <p>Currently we have 3 centers from where you can purchase a dragon: <ul><li><p>Croatia</p></li><li><p>Spain</p></li><li><p>Andaman Nikobar Islands, India</p></li></ul></p>
+
+                <div>
+                    <h2 id="buy">
+                        Buy
+                    </h2>
+                    <form action="https://www.freecodecamp.com/email-submit">
+                        <p>If you are interested in purchasing a dragon for yourself or to gift it to some one, please leave your email with us so that we can contact you</p>
+                        <input id="email" type="email" placeholder="Enter your email address"> <button id="submit" type="submit">Submit</button>
+                    </form>
+                </div>
+
+                <footer>Dragon Den Pvt Ltd.</footer>
+            </div>
+
+
+
+
+
+
+
+
+
         </div>
 
     </body>
