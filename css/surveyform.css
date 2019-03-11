@@ -1,0 +1,54 @@
+
+.form-container{
+    width: 100%;
+    background-color: aliceblue;
+}
+
+.form-row{
+    width:100%;
+    display:block;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.label{
+    padding-right: 20px;
+    display:inline-block;
+    text-align: right;
+    width: 40%;
+    vertical-align: top;
+}
+
+.field{
+    padding-left: 20px;
+    display:inline-block;
+    text-align: left;
+}
+
+#title{
+    text-align: center;
+    background-color: lightsteelblue;
+}
+
+.desc{
+    background-color: aliceblue;
+}
+
+#description{
+    margin: 0px;
+    padding: 10px;
+}
+
+.text-field{
+    width: 200px;
+}
+
+.submit-row{
+    padding: 20px;
+    text-align: center;
+}
+
+h1{
+    margin: 0px;
+    padding: 10px;
+}

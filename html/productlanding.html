@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="../css/surveyform.css">
+    </head>
+    <body>
+
+        <div>
+            <h1 id="title">Registration Form For Responsive Web classes</h1>
+        </div>
+
+        <div class="desc">
+            <p id="description">Please fill your details and submit to enroll yourself.</p>
+        </div>
+
+        <div class="form-container">
+            <form id="survey-form" action="">
+
+                <div class="form-row">
+                    <div class="label">
+                        <label id="name-label">Name: </label>
+                    </div>
+                    <div class="field">
+                        <input type="text" id="name" class="text-field" placeholder="Please enter name" required>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label">
+                        <label id="email-label">Email: </label>
+                    </div>
+                    <div class="field">
+                        <input type="email" id="email" class="text-field" placeholder="Please enter email address" required> <!--add validation-->
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label">
+                        <label id="number-label">Age: </label>
+                    </div>
+                    <div class="field">
+                        <input type="number" class="text-field" id="number" min="10" max="60" placeholder="Please enter your age" required> <!--add validation-->
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label">
+                        <label id="city-label">City: </label>
+                    </div>
+                    <div class="field">
+                        <select id="dropdown" name="City">
+                            <option value="delhi">Delhi</option>
+                            <option value="mumbai">Mumbai</option>
+                            <option value="bangalore">Bangalore</option>
+                            <option value="hyderabad">Hyderabad</option>
+                        </select>
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label">
+                        <label id="gender-label">Gender: </label>
+                    </div>
+                    <div class="field">
+                        <input type="radio" name="gender" value="M"> Male
+                        <input type="radio" name="gender" value="F"> Female
+                        <input type="radio" name="gender" value="O"> Other
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label">
+                        <label id="course-label">Course to enroll: </label>
+                    </div>
+                    <div class="field">
+                        <input type="checkbox" name="course" value="html"> HTML
+                        <input type="checkbox" name="course" value="css"> CSS
+                        <input type="checkbox" name="course" value="js"> JS
+                    </div>
+                </div>
+                <div class="form-row">
+                    <div class="label">
+                        <label id="comments-label">Suggestions: </label>
+                    </div>
+                    <div class="field">
+                        <textarea name="suggestions" rows="5" cols="50"
+                               placeholder="Please give your suggestions for any improvement"></textarea>
+                    </div>
+                </div>
+
+                <div class="submit-row"><button type="submit">Submit Details</button></div>
+
+            </form>
+        </div>
+
+    </body>
+</html>
+
+
